@@ -115,7 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Maincpp.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Net.cpp" />
     <ClCompile Include="Neuron.cpp" />
     <ClCompile Include="olc.cpp" />
