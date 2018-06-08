@@ -32,7 +32,7 @@ void Net::feedForward(const std::vector<double>& inputVals)
 	{
 		m_layers[0][i].setOutputVal(inputVals[i]);
 	}
-	//m_layers[0][inputVals.size()].setOutputVal( 1.0);
+
 	//Prop forwards.
 	for (unsigned layerNum = 1;layerNum<m_layers.size();layerNum++)
 	{

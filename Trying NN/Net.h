@@ -3,6 +3,7 @@
 #include<cassert>
 #include<iostream>
 
+#include"olc.h"
 #include"Neuron.h"
 
 class Net

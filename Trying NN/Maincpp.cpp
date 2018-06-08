@@ -1,5 +1,6 @@
 #include <fstream>
 #include<Windows.h>
+
 #include"Net.h"
 
 void showVectorVals(char* label, std::vector<double> &v, std::ofstream& f)
@@ -48,8 +49,8 @@ int main()
 
 	Net net(topology);
 
-	std::vector<double> inputVals ;
-	std::vector<double> targetVals ;
+	std::vector<double> inputVals;
+	std::vector<double> targetVals;
 	std::vector<double> resultVals;
 
 	bool bPause = false;
@@ -59,7 +60,7 @@ int main()
 		if (!bPause)
 		{
 			//Gen set.
-			inputVals .clear();
+			inputVals.clear();
 			targetVals.clear();
 			genTrainingSetAbc(inputVals, targetVals);
 
