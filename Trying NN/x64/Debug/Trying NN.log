@@ -1,0 +1,5 @@
+﻿  Main.cpp
+c:\users\howitt\source\repos\trying-nn\trying nn\olc.h(644): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\howitt\source\repos\trying-nn\trying nn\main.cpp(78): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Trying NN.vcxproj -> C:\Users\howitt\Source\Repos\Trying-NN\x64\Debug\Trying NN.exe
+  Trying NN.vcxproj -> C:\Users\howitt\Source\Repos\Trying-NN\x64\Debug\Trying NN.pdb (Partial PDB)

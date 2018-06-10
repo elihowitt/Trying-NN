@@ -33,8 +33,8 @@
 //	// Called by olcConsoleGameEngine
 //	virtual bool OnUserCreate()
 //	{
-//		sprite = new olcSprite(20, 20);
-//		sCurrentSpriteFile = L"NN_blank.spr";
+//		sprite = new olcSprite(10, 10);
+//		sCurrentSpriteFile = L"NN_image_nine.spr";
 //
 //		return true;
 //	}

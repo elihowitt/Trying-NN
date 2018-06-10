@@ -1,5 +1,6 @@
 #pragma once
 
+#include<fstream>
 #include<cassert>
 #include<iostream>
 
@@ -10,7 +11,7 @@ class Net
 {
 public:
 	Net();
-	Net(const std::vector<unsigned>);
+	Net(const std::vector<unsigned> , std::ofstream&);
 
 	void feedForward(const std::vector<double>&);
 	void backProp(const std::vector<double>&)   ;

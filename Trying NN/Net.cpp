@@ -4,7 +4,7 @@ Net::Net()
 {
 }
 
-Net::Net(const std::vector<unsigned> topology)
+Net::Net(const std::vector<unsigned> topology, std::ofstream& f)
 {
 	unsigned numLayers = topology.size();
 	for (unsigned layerNum = 0; layerNum < numLayers; layerNum++)
@@ -18,8 +18,9 @@ Net::Net(const std::vector<unsigned> topology)
 		for (unsigned neuronNum = 0; neuronNum <= topology[layerNum]; neuronNum++)
 		{
 			m_layers.back().push_back(Neuron(numOutputs, neuronNum));
-			std::cout << "Made a Neuron!!!" << std::endl;
+			f << "Made a "<<((!layerNum)?"input ":(layerNum == numLayers-1)?"output ":"hidden ")<<"Neuron!!!" << std::endl;
 		}
+		f << "\n";
 	m_layers.back().back().setOutputVal(1.0);
 	}
 }
